@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul class="tab-all" id="tab-all">
+            <li class="tab1" id="tab1">上一页</li>
+            <li class="tab2" id="tab2">下一页</li>
+            <li class="tab3" id="tab3">重置</li>
+        </ul>
+    </nav>
+    <div class="box-all clearfix" id="box-all">
+        <div class="box-1" id="box-1" style="background:red"></div>
+        <div class="box-2" id="box-2" style="background:blue"></div>
+        <div class="box-3" id="box-3" style="background:green"></div>
+    </div>
+    <script>
+        // 上一页
+        uppage()
+        // 下一页
+        downpage()
+        // 重置
+        startpage()
+
+        
+        // 封装
+        function uppage(){
+            let tab1 = document.getElementById('tab1')
+            tab1.onclick = function(){
+                console.dir('上一页')
+            }
+        }
+
+        function downpage(){
+            let tab2 = document.getElementById('tab2')
+            tab2.onclick = function(){
+                console.dir('下一页')
+            }
+        }
+        function startpage(){
+            let tab3 =document.getElementById('tab3')
+            tab3.onclick = function(){
+                console.dir('重置')
+            }
+
+        }
+    
+    </script>
+</body>
+</html>

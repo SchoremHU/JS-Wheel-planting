@@ -1,0 +1,16 @@
+.clearfix{
+    content:'';display:block;clear:both;
+}
+
+html,body,ul{padding :0; margin: 0;}
+ul,li{list-style:none;}
+nav {width:250px;padding:2px 5px; margin:20px auto 10px auto;}
+nav ul {display:grid;grid:repeat(1,20px)/auto-flow 70px;margin:0 0 0 30px}
+nav ul li { background:gray;width:60px;height:20px; text-align:center;line-height:20px;  cursor:pointer; border-radius:4px; color:white;}
+
+.box-all {width:250px;height:250px; border:1px red solid;margin:0 auto;position:relative;}
+.box-1,.box-2,.box-3 {width :150px; height:150px; margin:50px 50px;position: absolute;}
+
+.active{z-index: 1;}
+
+
