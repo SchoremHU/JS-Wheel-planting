@@ -10,46 +10,55 @@
 <body>
     <nav>
         <ul class="tab-all" id="tab-all">
-            <li class="tab1" id="tab1">上一页</li>
-            <li class="tab2" id="tab2">下一页</li>
-            <li class="tab3" id="tab3">重置</li>
+            <li class="tab-1" id="tab1">蓝色</li>
+            <li class="tab-2" id="tab2">红色</li>
+            <li class="tab-3" id="tab3">绿色</li>
         </ul>
     </nav>
     <div class="box-all clearfix" id="box-all">
-        <div class="box-1" id="box-1" style="background:red"></div>
-        <div class="box-2" id="box-2" style="background:blue"></div>
-        <div class="box-3" id="box-3" style="background:green"></div>
+        <div class="box-1" id="box1" style="background:red"></div>
+        <div class="box-2" id="box2" style="background:blue"></div>
+        <div class="box-3" id="box3" style="background:green"></div>
     </div>
     <script>
         // 上一页
-        uppage()
-        // 下一页
-        downpage()
+        // uppage.call(undefined)
+        // // 下一页
+        // downpage.call(undefined)
         // 重置
-        startpage()
+        // startpage.call(undefined)
 
         
         // 封装
-        function uppage(){
-            let tab1 = document.getElementById('tab1')
+    
+            // let tab1 = document.getElementById('tab1')
             tab1.onclick = function(){
                 console.dir('上一页')
+                box2.className = 'box-2 active'
+                box1.className = 'box-1'
+                box3.className = 'box-3'
             }
-        }
 
-        function downpage(){
-            let tab2 = document.getElementById('tab2')
+
+
+            // let tab2 = document.getElementById('tab2')
             tab2.onclick = function(){
                 console.dir('下一页')
+                box1.className = 'box-1 active'
+                box2.className = 'box-2'
+                box3.className = 'box-3'
             }
-        }
-        function startpage(){
-            let tab3 =document.getElementById('tab3')
+   
+
+            // let tab3 =document.getElementById('tab3')
             tab3.onclick = function(){
                 console.dir('重置')
+                box3.className = 'box-3 active'
+                box2.className = 'box-2'
+                box1.className = 'box-1'
             }
 
-        }
+
     
     </script>
 </body>

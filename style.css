@@ -9,8 +9,8 @@ nav ul {display:grid;grid:repeat(1,20px)/auto-flow 70px;margin:0 0 0 30px}
 nav ul li { background:gray;width:60px;height:20px; text-align:center;line-height:20px;  cursor:pointer; border-radius:4px; color:white;}
 
 .box-all {width:250px;height:250px; border:1px red solid;margin:0 auto;position:relative;}
-.box-1,.box-2,.box-3 {width :150px; height:150px; margin:50px 50px;position: absolute;}
+.box-1,.box-2,.box-3 {width :150px; height:150px; margin:50px 50px;position: absolute;transition: all 1s;}
 
-.active{z-index: 1;}
+.box-all .box-1.active,.box-2.active,.box-3.active{z-index: 1;}
 
 
