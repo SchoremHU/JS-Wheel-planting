@@ -1,8 +1,2 @@
 # JS-Wheel-planting
 
-
-
-
-
-
-
